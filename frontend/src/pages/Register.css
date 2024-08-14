@@ -1,0 +1,123 @@
+.reg-page{
+    height: 99vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.reg-page>div{
+    height: 90%;
+    width: 22%;
+    
+}
+
+.reg-image{
+    background-image: url(https://techcrunch.com/wp-content/uploads/2019/06/Instagram-Ads-In-Explore-Tab.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35% !important;
+}
+.reg-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.l-details{
+    height: 65%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    border: 1px solid #e0e0e0;
+    border-radius: 1px;
+
+}
+.insta-logo{
+    width: 70%;
+    height: 25%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 15px;
+}
+
+.insta-logo>img{
+    height: 105%;
+}
+.insta-reg-details{
+    height: 50%;
+    width: 80%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.insta-reg-details>input,.insta-reg-details>button{
+    width: 95%;
+    height: 33px;
+    
+    border: 0;
+    border: 1px solid #e0e0e0;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+   
+    text-overflow: ellipsis;
+   border-radius: 5px;
+   background-color: #fafafa;
+}
+.insta-reg-details>button{
+    margin-top: 10px;
+    background-color: #4cb4f9;
+    color: white;
+    font-weight: bold;
+}
+.f-pass{
+    width: 70%;
+    height: 25%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: black;
+}
+.f-pass>a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.l-reg{
+    height: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    border: 1px solid #e0e0e0;
+    border-radius: 1px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.play-store{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.play-store>img{
+    height: 65%;
+}
+

@@ -1,0 +1,74 @@
+.profile-page{
+   
+    height: auto;
+}
+
+.profile-info{
+    height: 30vh;
+    width: 80%;
+   
+    margin: auto;
+    display: flex;
+   gap: 30px;
+}
+
+.profile-image{
+    width: 20%;
+    height: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-image>img{
+    height: 70%;
+    border-radius: 50%;
+}
+
+.profile-data{
+    width: 40%;
+    height: 100%;
+   
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+h3,h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+h3{
+    font-size: 25px;
+    align-self: center;
+}
+
+.profile-data>button{
+    width: 100px;
+    height: 35px;
+    align-self: center;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid black;
+
+}
+
+.post-container{
+    height:auto;
+    width: 80%;
+   
+    margin: auto;
+   
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+.post-container>img{
+    height: 390px;
+    width: 390px;
+    gap: 0px;
+    border: 1px solid white;
+}
