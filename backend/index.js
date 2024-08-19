@@ -4,6 +4,7 @@ const morgan=require("morgan")
 const helmet = require("helmet")
 const mongoose = require('mongoose');
 const authRoute = require("./Routes/Auth")
+const userRoute = require("./Routes/Users")
 
 main().catch(err => console.log(err));
 
@@ -18,6 +19,7 @@ app.use(helmet())
 
 //ROUTES
 app.use("/ig/auth",authRoute)
+app.use("/ig/profile",userRoute)
 
 
 app.listen(8888,()=>{
