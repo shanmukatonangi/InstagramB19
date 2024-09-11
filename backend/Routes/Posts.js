@@ -1,5 +1,6 @@
 const router = require("express").Router()
 const Post= require("../models/Postmodel")
+const User = require("../models/Usermodel")
 
 router.post("/create",async(req,res)=>{
     try {
@@ -44,6 +45,42 @@ try {
     
 }
 })
+
+router.put("/like/:id",async(req,res)=>{  //localhost:8888/ig/post/like/66df0781e482c2af59c87975
+    try{
+        const post = await Post.findById(req.params.id)
+        if(!post.likes.includes(req.body.userid)){
+            await post.updateOne({$push:{likes:req.body.userid}})
+            res.send("post liked")
+
+        }else{
+            await post.updateOne({$pull:{likes:req.body.userid}})
+            res.send("post disliked")
+        }
+    }catch(err){
+        console.log(err)
+    }
+
+})
+
+
+router.get("/timeline/:id",async(req,res)=>{
+    try {
+
+        const currentuser= await User.findById(req.params.id) //shanmukh
+        const userpost = await Post.find({userid:req.params.id})
+        const friendpost = await Post.find({userid:{$in:currentuser.following}})
+        const allpost = [...userpost,...friendpost]
+        res.send(allpost)
+
+
+
+        
+    } catch (error) {
+        
+    }
+})
+
 
 
 module.exports = router
